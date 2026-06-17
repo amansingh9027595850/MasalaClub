@@ -559,6 +559,39 @@ const state = {
             rating: '4.7',
             image: 'assets/potato_chips.jpg',
             imageClass: 'chips-img'
+        },
+        {
+            id: 'groc_33',
+            name: 'Dried Buransh Petals',
+            price: 180,
+            weight: '100g',
+            description: 'Hand-picked, sun-dried crimson rhododendron (Buransh) petals from the high forests of Chamoli, ideal for making traditional teas, squashes, and infusions.',
+            category: 'spices',
+            rating: '4.9',
+            image: 'assets/buransh_flowers.png',
+            imageClass: 'buransh-img'
+        },
+        {
+            id: 'groc_34',
+            name: 'Himalayan Shivakton Juice',
+            price: 260,
+            weight: '500ml',
+            description: '100% pure, nutrient-dense Sea Buckthorn berry juice, packed with vitamins and essential Omega fatty acids directly from high-altitude slopes.',
+            category: 'essentials',
+            rating: '4.8',
+            image: 'assets/seabuckthorn.png',
+            imageClass: 'seabuckthorn-img'
+        },
+        {
+            id: 'groc_35',
+            name: 'Organic Tulshi Leaves',
+            price: 90,
+            weight: '50g',
+            description: 'Aromatic, sun-dried holy basil (Tulsi) leaves hand-picked from organic home gardens in Chamoli valleys, ideal for soothing infusions.',
+            category: 'spices',
+            rating: '4.8',
+            image: 'assets/tulsi.png',
+            imageClass: 'tulsi-img'
         }
     ],
 
@@ -1185,10 +1218,26 @@ function renderGalleryItems() {
             tagText: 'Mountain Honey'
         },
         {
-            id: 'scene_groc_3',
-            name: 'Organic Green Cardamom',
-            description: 'Aromatic green cardamom pods sourced from traditional family farms in lower Chamoli valleys.',
-            image: 'assets/cardamom_pods.jpg',
+            id: 'scene_groc_3_buransh',
+            name: 'Dried Buransh Petals',
+            description: 'Hand-picked, sun-dried crimson rhododendron (Buransh) petals from the high forests of Chamoli, ideal for making traditional teas, squashes, and infusions.',
+            image: 'assets/buransh_flowers.png',
+            category: 'grocery',
+            tagText: 'Spices & Herbs'
+        },
+        {
+            id: 'scene_groc_3_shivakton',
+            name: 'Himalayan Shivakton Juice',
+            description: '100% pure, nutrient-dense Sea Buckthorn berry juice, packed with vitamins and essential Omega fatty acids directly from high-altitude slopes.',
+            image: 'assets/seabuckthorn.png',
+            category: 'grocery',
+            tagText: 'Superfoods'
+        },
+        {
+            id: 'scene_groc_3_tulshi',
+            name: 'Organic Tulshi Leaves',
+            description: 'Aromatic, sun-dried holy basil (Tulsi) leaves hand-picked from organic home gardens in Chamoli valleys, ideal for soothing infusions.',
+            image: 'assets/tulsi.png',
             category: 'grocery',
             tagText: 'Spices & Herbs'
         },
