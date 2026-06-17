@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Club | Premium Himalayan Cafe & Grocery Store, Chamoli</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Welcome to Masala Club in Chamoli, Uttarakhand. Experience authentic mountain teas, cozy cafe brews, organic honey, and local valley grains. Brewed in the clouds, sourced from the valley.">
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Floating Navigation Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo" id="logo-btn" onclick="window.location.href='index.html'">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Mountain silhouette -->
+                    <path d="M20 70L40 40L55 60L75 30L90 70H20Z" fill="url(#mountainGrad)" opacity="0.8" />
+                    <path d="M20 70L40 40L55 60L47 50L35 68H20Z" fill="#FFF" opacity="0.2" />
+                    <path d="M75 30L65 48L70 55L75 30Z" fill="#FFF" opacity="0.2" />
+                    <!-- Steam (Animated) -->
+                    <g class="logo-steam">
+                        <path d="M42 24C42 24 44 19 42 14" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                        <path d="M50 26C50 26 52 21 50 16" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                        <path d="M58 24C58 24 60 19 58 14" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                    </g>
+                    <!-- Steaming Cup -->
+                    <path d="M35 54C35 46 65 46 65 54C65 64 61 70 50 70C39 70 35 64 35 54Z" fill="url(#cupGrad)"
+                        stroke="#e5b869" stroke-width="2" />
+                    <path d="M65 50C69 50 72 54 70 58C68 61 65 60 65 60" stroke="#e5b869" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M32 74H68" stroke="#e5b869" stroke-width="3" stroke-linecap="round" />
+                    <!-- Spice Leaf -->
+                    <path d="M68 64C75 60 82 60 84 66C85 70 80 74 73 74C68 74 68 68 68 64Z" fill="#3f6e5f"
+                        opacity="0.9" />
+                    <path d="M68 64C72 68 76 70 84 66" stroke="#e5b869" stroke-width="1" />
+                    <defs>
+                        <linearGradient id="mountainGrad" x1="50" y1="30" x2="50" y2="70"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#1e302b" />
+                            <stop offset="100%" stop-color="#0b110f" />
+                        </linearGradient>
+                        <linearGradient id="cupGrad" x1="50" y1="44" x2="50" y2="70" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#121c19" />
+                            <stop offset="100%" stop-color="#1e302b" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">Masala<span>Club</span></div>
+            </div>
+
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+
+                <div class="menu-toggle" id="menu-mobile-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-container">
+            <img src="assets/cafe_hero.png" alt="Cozy Mountain Cafe View" class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-location">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                Chamoli, Himalayas
+            </div>
+            <h1 class="hero-title title-gradient">Masala Club</h1>
+            <p class="hero-tagline">"Brewed in the Clouds, Sourced from the Valley"</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='cafe.html'">Dine at Cafe</button>
+                <button class="btn btn-secondary" onclick="window.location.href='grocery.html'">Shop Organic
+                    Groceries</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-subtitle">The Spirit of Chamoli</span>
+                    <h2 class="section-title title-gradient">Our Story & Philosophy</h2>
+                    <p>High up in the Chamoli district, surrounded by towering peaks and clean mountain air, we
+                        envisioned <strong>Masala Club</strong>. It isn't just a place to eat—it is a community hub that
+                        connects travelers and locals through honest, warm food and sustainably harvested valley
+                        produce.</p>
+                    <p style="margin-top: 16px;">We work closely with local self-help groups and organic farmers across
+                        Uttarakhand, sourcing aromatic cardamoms, wild mountain honey, and hand-rolled tea leaves
+                        directly, ensuring fair prices for the hills.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🏔️</div>
+                            <div>
+                                <h4 class="about-feature-title">Mountain Sourced</h4>
+                                <p class="about-feature-desc">100% natural, grown in high altitudes near snow peaks.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🤝</div>
+                            <div>
+                                <h4 class="about-feature-title">Community First</h4>
+                                <p class="about-feature-desc">Empowering local mountain farmers and families.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-stack">
+                    <img src="assets/cafe_outdoor.png" alt="Cozy Outdoor Balcony Seating" class="about-img-main">
+                    <img src="assets/grocery_products.png" alt="Himalayan Local Produce" class="about-img-sub">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-alt" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Cozy Views & Vibes</span>
+                <h2 class="section-title title-gradient">Chamoli Ridge Gallery</h2>
+                <p class="section-desc">Take a visual journey through Masala Club. Admire Nanda Devi peak visibility,
+                    the cozy fireplace decks, and local organic cooperative harvests.</p>
+            </div>
+
+            <!-- Gallery Grid Layout -->
+            <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px;">
+                <!-- Image 1 -->
+                <div class="card glass-panel gallery-item" data-category="cafe" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/cafe_hero.png" alt="Cozy Cafe Mountain View" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Cafe Special</span>
+                                <h4 class="gallery-hover-title">Cozy Cafe Mountain View</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Step inside the cozy wooden interiors of
+                            Masala Club, featuring warm ambient lighting, rustic seating, and a panoramic glass facade
+                            overlooking the snow-capped Himalayan ranges.</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="card glass-panel gallery-item" data-category="cafe" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/cafe_outdoor.png" alt="Sunset Balcony Deck" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Cafe Special</span>
+                                <h4 class="gallery-hover-title">Sunset Balcony Deck</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Enjoy your warm brews in the crisp
+                            mountain air on our open balcony deck, offering front-row seats to the majestic sunset
+                            painting the Himalayan ridges.</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="card glass-panel gallery-item" data-category="grocery" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/grocery_products.png" alt="Himalayan Produce" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Organic Produce</span>
+                                <h4 class="gallery-hover-title">Himalayan Produce</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Browse our shelves stocked with premium
+                            local cooperative harvests—from raw mountain honey to unrefined spices and traditional
+                            valley grains.</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="card glass-panel gallery-item" data-category="cafe" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/pahadi_kitchen.png" alt="Traditional Spice Kitchen" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Cafe Kitchen</span>
+                                <h4 class="gallery-hover-title">Traditional Spice Kitchen</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Our authentic wood-fired Himalayan kitchen
+                            where we prepare traditional spices, local tea blends, and mountain specialities.</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="card glass-panel gallery-item" data-category="grocery" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/wild_honey.jpg" alt="Wild Forest Honey" class="card-img" style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Mountain Honey</span>
+                                <h4 class="gallery-hover-title">Wild Forest Honey</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Our raw mountain honey gathered by local
+                            tribes in high altitude coniferous forests.</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="card glass-panel gallery-item" data-category="cafe" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/masala_club_exterior.png" alt="Masala Club Cafe and Grocery Shop Exterior"
+                            class="card-img" style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Cafe Exterior</span>
+                                <h4 class="gallery-hover-title">Masala Club Exterior</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">The welcoming storefront of Masala Club,
+                            located on Main Ridge Road in Chamoli, Gopeshwar, combining rustic mountain architecture
+                            with modern glass facades.</p>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="card glass-panel gallery-item" data-category="grocery" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/cardamom_pods.jpg" alt="Organic Green Cardamom" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Spices & Herbs</span>
+                                <h4 class="gallery-hover-title">Organic Green Cardamom</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Aromatic green cardamom pods sourced from
+                            traditional family farms in lower Chamoli valleys.</p>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="card glass-panel gallery-item" data-category="grocery" style="overflow: hidden;">
+                    <div class="card-image-wrapper" style="height: 280px;">
+                        <img src="assets/golden_needle_tea.jpg" alt="Golden Needle Tea" class="card-img"
+                            style="height: 100%;">
+                        <div class="gallery-hover-overlay">
+                            <div class="gallery-hover-content">
+                                <span class="gallery-hover-category">Tea & Coffee</span>
+                                <h4 class="gallery-hover-title">Golden Needle Tea</h4>
+                                <span class="gallery-hover-action">Click to View details 🔍</span>
+                            </div>
+                        </div>
+                        <p class="gallery-desc-hidden" style="display: none;">Rare high-altitude black tea buds with
+                            delicate golden tips and a natural sweet finish.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <button class="btn btn-secondary" onclick="window.location.href='gallery.html'">Explore Full
+                    Gallery</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Guest Diaries</span>
+                <h2 class="section-title title-gradient">Loved by Travelers & Locals</h2>
+                <p class="section-desc">Here is what the adventurers, tea lovers, and local guides visiting Chamoli have
+                    to say about Masala Club.</p>
+            </div>
+
+            <div class="testimonials-slider-wrapper">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="card glass-panel testimonial-card"
+                        style="padding: 30px; border-radius: var(--border-radius-lg); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="color: var(--accent-gold); font-size: 1.25rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                            <p
+                                style="font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
+                                "Finding Masala Club after a long trek from Gopeshwar was a dream. The Spiced Masala
+                                Chai and hot bread with local mountain herbs warmed me right up. The view of Nanda Devi
+                                from the deck is breathtaking!"
+                            </p>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 15px; margin-top: 25px; border-top: 1px solid var(--border-light); padding-top: 15px;">
+                            <div
+                                style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-copper) 100%); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--bg-primary); font-family: var(--font-heading);">
+                                AR
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 2px;">Aarav Rawat
+                                </h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-gold); margin: 0;">Trek Enthusiast,
+                                    Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="card glass-panel testimonial-card"
+                        style="padding: 30px; border-radius: var(--border-radius-lg); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="color: var(--accent-gold); font-size: 1.25rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                            <p
+                                style="font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
+                                "I buy my monthly grocery supply of Chamoli Wild Forest Honey and Organic Cardamom here.
+                                The quality is unmatched, and knowing they source directly from local mountain families
+                                makes it even better."
+                            </p>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 15px; margin-top: 25px; border-top: 1px solid var(--border-light); padding-top: 15px;">
+                            <div
+                                style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-gold) 100%); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-primary); font-family: var(--font-heading);">
+                                SD
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 2px;">Sunita Devi
+                                </h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-gold); margin: 0;">Resident, Gopeshwar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="card glass-panel testimonial-card"
+                        style="padding: 30px; border-radius: var(--border-radius-lg); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="color: var(--accent-gold); font-size: 1.25rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                            <p
+                                style="font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
+                                "The Buransh Rhododendron Cooler is an absolute masterpiece! Combined with the warm
+                                Pahadi hospitality and the cozy indoor fireplace, it's easily the best stopover in the
+                                entire Chamoli district."
+                            </p>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 15px; margin-top: 25px; border-top: 1px solid var(--border-light); padding-top: 15px;">
+                            <div
+                                style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-copper) 0%, var(--accent-green) 100%); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-primary); font-family: var(--font-heading);">
+                                RM
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 2px;">Rohan Mehta
+                                </h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-gold); margin: 0;">Travel Blogger,
+                                    Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="card glass-panel testimonial-card"
+                        style="padding: 30px; border-radius: var(--border-radius-lg); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="color: var(--accent-gold); font-size: 1.25rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                            <p
+                                style="font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
+                                "The stoneground Mandua millet flour from their grocery store makes the best ragi rotis.
+                                It is ground so fine in their traditional watermills. Masala Club is doing wonders for
+                                preserving our heritage foods!"
+                            </p>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 15px; margin-top: 25px; border-top: 1px solid var(--border-light); padding-top: 15px;">
+                            <div
+                                style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-green) 100%); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--text-primary); font-family: var(--font-heading);">
+                                PS
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 2px;">Priya
+                                    Sharma</h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-gold); margin: 0;">Organic Food
+                                    Researcher, Dehradun</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="card glass-panel testimonial-card"
+                        style="padding: 30px; border-radius: var(--border-radius-lg); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="color: var(--accent-gold); font-size: 1.25rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
+                            <p
+                                style="font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
+                                "Every time I lead a tour up the ridges, we stop by Masala Club. The staff is always so
+                                welcoming and their energy is amazing. It's the perfect spot to rest, reload supplies,
+                                and get a delicious cup of butter tea."
+                            </p>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 15px; margin-top: 25px; border-top: 1px solid var(--border-light); padding-top: 15px;">
+                            <div
+                                style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-copper) 0%, var(--accent-gold) 100%); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--bg-primary); font-family: var(--font-heading);">
+                                KN
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 2px;">Kabir Negi
+                                </h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-gold); margin: 0;">Local Mountain
+                                    Guide, Chamoli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn" id="testimonial-prev-btn" aria-label="Previous Testimonial">←</button>
+                <button class="slider-btn" id="testimonial-next-btn" aria-label="Next Testimonial">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview / Feature Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Experience Masala Club</span>
+                <h2 class="section-title title-gradient">Serving You in the Peaks</h2>
+                <p class="section-desc">Located in the picturesque Chamoli district, we offer two specialized mountain
+                    services under one cozy glass roof.</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+                <!-- Cafe Teaser Card -->
+                <div class="card glass-panel" style="padding: 32px; border-radius: var(--border-radius-lg);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">☕</div>
+                    <h3 class="card-title" style="font-size: 1.6rem; margin-bottom: 12px; color: var(--accent-gold);">
+                        The Mountain Cafe</h3>
+                    <p class="card-desc" style="font-size: 1rem; margin-bottom: 30px;">Warm up after a trek with our
+                        authentic spiced masala tea, Rhododendron coolers, butter teas, and fresh mountain tarts baked
+                        daily. Reserve a scenic window seat looking out to Nanda Devi.</p>
+                    <button class="btn btn-secondary" style="width: 100%; justify-content: center; margin-top: auto;"
+                        onclick="window.location.href='cafe.html'">View Menu & Order</button>
+                </div>
+
+                <!-- Grocery Teaser Card -->
+                <div class="card glass-panel" style="padding: 32px; border-radius: var(--border-radius-lg);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🍯</div>
+                    <h3 class="card-title" style="font-size: 1.6rem; margin-bottom: 12px; color: var(--accent-copper);">
+                        Organic Grocery Store</h3>
+                    <p class="card-desc" style="font-size: 1rem; margin-bottom: 30px;">Take home the authentic spices,
+                        mountain honey, premium golden needle teas, and healthy grains cultivated by farming
+                        co-operatives in the Nanda Devi biosphere valley.</p>
+                    <button class="btn btn-secondary"
+                        style="width: 100%; justify-content: center; margin-top: auto; border-color: rgba(212, 129, 91, 0.3); color: var(--text-primary);"
+                        onclick="window.location.href='grocery.html'">Shop Organic Spices</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Mountain Special Highlight Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-subtitle">Specials Sourced at 1,550m</span>
+                    <h2 class="section-title title-gradient">Wild Rhododendron Buransh</h2>
+                    <p>Harvested during spring from the crimson forest canopies surrounding Chamoli, the Buransh flower
+                        is renowned for its heart-healthy nutrients and crisp cooling flavor. We hand-press the petals
+                        to create our seasonal Rhododendron drinks and jarred syrups.</p>
+                    <p style="margin-top: 16px;">Try it fresh at our cafe counter or pick up a bottle from our grocery
+                        catalog to savor the high Himalayas from home.</p>
+                    <div style="margin-top: 30px;">
+                        <button class="btn btn-primary" onclick="window.location.href='cafe.html'">Try Cafe
+                            Cooler</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='about.html'"
+                            style="margin-left: 10px;">Our Sourcing Story</button>
+                    </div>
+                </div>
+                <div class="about-image-stack">
+                    <img src="assets/cafe_outdoor.png" alt="Balcony viewing Nanda Devi" class="about-img-main">
+                    <img src="assets/grocery_products.png" alt="Organic mountain grocery products"
+                        class="about-img-sub">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Got Questions?</span>
+                <h2 class="section-title title-gradient">Frequently Asked Questions</h2>
+                <p class="section-desc">Got questions about our mountain brews, local sourcing, or cozy spot in Chamoli?
+                    We've got you covered.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item glass-panel">
+                    <button class="faq-question">
+                        <span>Where do you source your ingredients?</span>
+                        <span class="faq-icon">✕</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We source 100% of our herbs, grains, and honey directly from local smallholder farmers and
+                            self-help cooperative groups in the valleys of Chamoli and Gopeshwar. This ensures maximum
+                            freshness and supports the mountain economy directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <button class="faq-question">
+                        <span>Do you offer shipping for organic groceries?</span>
+                        <span class="faq-icon">✕</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we do! While cafe dining and hot beverages are exclusive to our cozy Chamoli outlet, our
+                            organic packaged mountain groceries (like wild forest honey, green cardamom, and local
+                            grains) can be shipped across India. Place an order directly at our store or contact us.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <button class="faq-question">
+                        <span>Can we reserve a table at the cafe?</span>
+                        <span class="faq-icon">✕</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, walk-ins are always welcome, but we recommend booking in advance to secure our prized
+                            Nanda Devi balcony deck seats, especially during clear-sky sunset hours when the mountain
+                            views are most spectacular.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <button class="faq-question">
+                        <span>What are your operating hours and are you open year-round?</span>
+                        <span class="faq-icon">✕</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We are open daily: Weekdays from 7:30 AM to 9:00 PM, and Weekends from 7:00 AM to 10:00 PM.
+                            While we are open year-round, we may temporarily adjust hours or close during periods of
+                            extreme high-altitude snowfall or heavy monsoon landslides for safety.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <button class="faq-question">
+                        <span>Do you have vegan and gluten-free options?</span>
+                        <span class="faq-icon">✕</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer dairy-free alternatives (like Oat Milk for cardamoms and coffee brews)
+                            and serve gluten-free local millet crepes (made from traditional finger millet Mandua) and
+                            slow-cooked red rice bowls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-brand-title">Masala<span>Club</span></h3>
+                    <p class="footer-brand-desc">Serving premium mountain blends and pure local Himalayan organic
+                        produce directly to your hands in Chamoli.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/masalaclubcompany/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61590862975801" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">Cafe Menu</a></li>
+                        <li><a href="grocery.html">Local Grocery</a></li>
+                        <li><a href="about.html">Story & Sourcing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Opening Hours</h4>
+                    <ul class="footer-links" style="color: var(--text-secondary);">
+                        <li>Weekday: 7:30 AM - 9:00 PM</li>
+                        <li>Saturday: 7:00 AM - 10:00 PM</li>
+                        <li>Sunday: 7:00 AM - 9:00 PM</li>
+                        <li style="margin-top: 10px; color: var(--accent-gold); font-size: 0.8rem; font-weight: 600;">*
+                            Closed during extreme snowfall</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Find Us</h4>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=30.409667,79.3255"
+                                target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">30°24'34.8"N 79°19'31.8"E, Vivekananda Colony,
+                                Haldapani, Gopeshwar, Uttarakhand 246401</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </span>
+                            <a href="tel:+917895447152"
+                                style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">+91 78954 47152</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </span>
+                            <a href="mailto:masalaclubcompany@gmail.com"
+                                style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">masalaclubcompany@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Masala Club Chamoli. All rights reserved. Created with mountain love.</span>
+                <span>FSSAI Lic No. 12345678901234</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared Modals & Drawers Templates -->
+
+
+
+    <!-- Success Modal Overlay -->
+    <div class="modal-overlay" id="success-message-modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-close" onclick="closeSuccessModal()">✕</div>
+            <div class="success-modal-body">
+                <div class="success-icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                    </svg>
+                </div>
+                <h3 class="success-title" id="success-modal-title">Action Confirmed</h3>
+                <p class="success-desc" id="success-modal-message">Your action was completed successfully.</p>
+                <button class="btn btn-primary" onclick="closeSuccessModal()"
+                    style="margin: 0 auto; display: block;">Awesome</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="modal-overlay" id="gallery-lightbox-modal">
+        <div class="modal-content glass-panel lightbox-content"
+            style="max-width: 800px; padding: 0; overflow: hidden; border-radius: var(--border-radius-md);">
+            <div class="modal-close" onclick="closeLightbox()">✕</div>
+            <div class="lightbox-body">
+                <div class="lightbox-img-container"
+                    style="position: relative; background: #050807; display: flex; align-items: center; justify-content: center; min-height: 300px; max-height: 500px;">
+                    <img id="lightbox-img" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    <button class="lightbox-nav prev" onclick="navigateLightbox(-1)"
+                        style="position: absolute; left: 16px; background: rgba(0,0,0,0.6); border: 1px solid rgba(229,184,105,0.3); border-radius: 50%; width: 44px; height: 44px; color: #fff; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">‹</button>
+                    <button class="lightbox-nav next" onclick="navigateLightbox(1)"
+                        style="position: absolute; right: 16px; background: rgba(0,0,0,0.6); border: 1px solid rgba(229,184,105,0.3); border-radius: 50%; width: 44px; height: 44px; color: #fff; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">›</button>
+                </div>
+                <div class="lightbox-details"
+                    style="padding: 40px; display: flex; flex-direction: column; justify-content: center; background: var(--bg-secondary);">
+                    <span id="lightbox-tag" class="section-subtitle" style="margin-bottom: 8px;">Category</span>
+                    <h3 id="lightbox-title"
+                        style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; margin-bottom: 16px; color: var(--text-primary);">
+                        Product Name</h3>
+                    <p id="lightbox-desc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                        Product Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-notifications-container"></div>
+
+    <!-- Script Links -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

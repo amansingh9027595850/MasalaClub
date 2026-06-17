@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Masala Club Chamoli</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Explore Masala Club services in Chamoli, Uttarakhand: Dine in our mountain view cafe, shop hand-harvested organic valley groceries, or reserve a cozy fireplace table.">
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Floating Navigation Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container nav-container">
+            <div class="logo" id="logo-btn" onclick="window.location.href='index.html'">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Mountain silhouette -->
+                    <path d="M20 70L40 40L55 60L75 30L90 70H20Z" fill="url(#mountainGrad)" opacity="0.8" />
+                    <path d="M20 70L40 40L55 60L47 50L35 68H20Z" fill="#FFF" opacity="0.2" />
+                    <path d="M75 30L65 48L70 55L75 30Z" fill="#FFF" opacity="0.2" />
+                    <!-- Steam (Animated) -->
+                    <g class="logo-steam">
+                        <path d="M42 24C42 24 44 19 42 14" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                        <path d="M50 26C50 26 52 21 50 16" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                        <path d="M58 24C58 24 60 19 58 14" stroke="#e5b869" stroke-width="2" stroke-linecap="round" />
+                    </g>
+                    <!-- Steaming Cup -->
+                    <path d="M35 54C35 46 65 46 65 54C65 64 61 70 50 70C39 70 35 64 35 54Z" fill="url(#cupGrad)"
+                        stroke="#e5b869" stroke-width="2" />
+                    <path d="M65 50C69 50 72 54 70 58C68 61 65 60 65 60" stroke="#e5b869" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M32 74H68" stroke="#e5b869" stroke-width="3" stroke-linecap="round" />
+                    <!-- Spice Leaf -->
+                    <path d="M68 64C75 60 82 60 84 66C85 70 80 74 73 74C68 74 68 68 68 64Z" fill="#3f6e5f"
+                        opacity="0.9" />
+                    <path d="M68 64C72 68 76 70 84 66" stroke="#e5b869" stroke-width="1" />
+                    <defs>
+                        <linearGradient id="mountainGrad" x1="50" y1="30" x2="50" y2="70"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#1e302b" />
+                            <stop offset="100%" stop-color="#0b110f" />
+                        </linearGradient>
+                        <linearGradient id="cupGrad" x1="50" y1="44" x2="50" y2="70" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#121c19" />
+                            <stop offset="100%" stop-color="#1e302b" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">Masala<span>Club</span></div>
+            </div>
+
+            <ul class="nav-links" id="nav-links-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+
+                <div class="menu-toggle" id="menu-mobile-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="hero-sub" id="services-hero">
+        <div class="hero-bg-container">
+            <img src="assets/cafe_outdoor.png" alt="Masala Club Scenic Surroundings" class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <span class="section-subtitle" style="text-shadow: var(--glow-gold);">What We Offer</span>
+            <h1 class="hero-title title-gradient" style="font-size: 3rem; margin-bottom: 8px; line-height: 1.2;">Our
+                Services</h1>
+            <p class="hero-tagline" style="font-size: 1.15rem; margin-bottom: 0;">Experience the best of the high
+                Himalayas under one cozy glass roof</p>
+        </div>
+    </section>
+
+    <!-- Services Dashboard -->
+    <section class="section">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+                <!-- Cafe Card -->
+                <div class="card glass-panel" style="border-radius: var(--border-radius-lg); overflow: hidden;">
+                    <div
+                        style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(63, 110, 95, 0.2) 0%, rgba(212, 129, 91, 0.1) 100%);">
+                        <span style="font-size: 4rem;">☕</span>
+                    </div>
+                    <div class="card-info" style="padding: 30px;">
+                        <h3 class="card-title"
+                            style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-gold);">The Mountain Cafe
+                        </h3>
+                        <p class="card-desc" style="margin-bottom: 24px;">Enjoy traditional spiced masala teas,
+                            Rhododendron blossom iced coolers, savory butter teas, and artisanal wheat tarts baked with
+                            wild walnuts.</p>
+                        <button class="btn btn-primary" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='cafe.html'">Open Cafe Menu</button>
+                    </div>
+                </div>
+
+                <!-- Grocery Card -->
+                <div class="card glass-panel" style="border-radius: var(--border-radius-lg); overflow: hidden;">
+                    <div
+                        style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(212, 129, 91, 0.15) 0%, rgba(18, 28, 25, 0.4) 100%);">
+                        <span style="font-size: 4rem;">🌿</span>
+                    </div>
+                    <div class="card-info" style="padding: 30px;">
+                        <h3 class="card-title"
+                            style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-copper);">Himalayan
+                            Organic Grocery</h3>
+                        <p class="card-desc" style="margin-bottom: 24px;">Bring home unpasteurized pine forest honey,
+                            fine green cardamom pods, mineral pink rock salt, local red terraced rice, and
+                            watermillground flours.</p>
+                        <button class="btn btn-secondary"
+                            style="width: 100%; justify-content: center; border-color: var(--accent-copper); color: var(--text-primary);"
+                            onclick="window.location.href='grocery.html'">Browse Grocery</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Page-Specific Styles -->
+    <style>
+        .sourcing-tab-btn {
+            width: 100%;
+            text-align: left;
+            padding: 18px 24px;
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-glass);
+            cursor: pointer;
+            transition: var(--transition-normal);
+        }
+
+        .sourcing-tab-btn:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--border-light);
+            transform: translateX(4px);
+        }
+
+        .sourcing-tab-btn.active {
+            background: rgba(229, 184, 105, 0.08);
+            border-color: var(--accent-gold);
+            box-shadow: var(--glow-gold);
+        }
+
+        .sourcing-tab-btn.active .tab-title {
+            color: var(--accent-gold) !important;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+    </style>
+
+    <!-- Interactive Sourcing Section -->
+    <section class="section section-alt" id="sourcing-dashboard">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Behind Our Produce</span>
+                <h2 class="section-title title-gradient">Himalayan Sourcing & Sourcing</h2>
+                <p class="section-desc">We work with local mountain cooperatives at high altitudes to source authentic
+                    ingredients. Click the options below to explore our sourcing stories.</p>
+            </div>
+
+            <div class="about-grid" style="align-items: stretch; gap: 40px;">
+                <!-- Left Tabs Menu -->
+                <div style="display: flex; flex-direction: column; gap: 16px; justify-content: center;">
+                    <button class="sourcing-tab-btn active" onclick="switchSourcingTab('ghatt', this)">
+                        <span style="font-size: 1.5rem;">🌾</span>
+                        <div>
+                            <div class="tab-title"
+                                style="font-weight: 700; font-size: 1rem; color: var(--text-primary); transition: color var(--transition-fast);">
+                                Traditional Ghatt Mills</div>
+                            <div
+                                style="font-size: 0.75rem; color: var(--text-secondary); font-weight: normal; margin-top: 2px;">
+                                Watermill stone grinding</div>
+                        </div>
+                    </button>
+                    <button class="sourcing-tab-btn" onclick="switchSourcingTab('honey', this)">
+                        <span style="font-size: 1.5rem;">🐝</span>
+                        <div>
+                            <div class="tab-title"
+                                style="font-weight: 700; font-size: 1rem; color: var(--text-primary); transition: color var(--transition-fast);">
+                                Wild Apiculture</div>
+                            <div
+                                style="font-size: 0.75rem; color: var(--text-secondary); font-weight: normal; margin-top: 2px;">
+                                Coniferous forest bee gathering</div>
+                        </div>
+                    </button>
+                    <button class="sourcing-tab-btn" onclick="switchSourcingTab('tea', this)">
+                        <span style="font-size: 1.5rem;">🍃</span>
+                        <div>
+                            <div class="tab-title"
+                                style="font-weight: 700; font-size: 1rem; color: var(--text-primary); transition: color var(--transition-fast);">
+                                High Altitude Tea</div>
+                            <div
+                                style="font-size: 0.75rem; color: var(--text-secondary); font-weight: normal; margin-top: 2px;">
+                                Handrolled valley leaves</div>
+                        </div>
+                    </button>
+                    <button class="sourcing-tab-btn" onclick="switchSourcingTab('delivery', this)">
+                        <span style="font-size: 1.5rem;">🚘</span>
+                        <div>
+                            <div class="tab-title"
+                                style="font-weight: 700; font-size: 1rem; color: var(--text-primary); transition: color var(--transition-fast);">
+                                Mountain Logistics</div>
+                            <div
+                                style="font-size: 0.75rem; color: var(--text-secondary); font-weight: normal; margin-top: 2px;">
+                                High altitude transport</div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Right Detail Display (Interactive Glass Panel) -->
+                <div class="card glass-panel"
+                    style="padding: 40px; display: flex; flex-direction: column; justify-content: center; min-height: 380px;"
+                    id="sourcing-detail-card">
+                    <div id="sourcing-content-area">
+                        <h3 class="card-title"
+                            style="font-size: 1.8rem; margin-bottom: 12px; color: var(--accent-gold);">Traditional Ghatt
+                            Mills</h3>
+                        <p style="margin-bottom: 24px; line-height: 1.7; color: var(--text-secondary);">Our local
+                            millets and grains are ground using traditional stone watermills (Ghatts) powered entirely
+                            by glacial streams. This slow, cold-grinding process retains all natural nutrients and
+                            delivers a superior texture to the flour.</p>
+
+                        <div class="about-features" style="margin-top: 20px; grid-template-columns: 1fr;">
+                            <div class="about-feature">
+                                <div class="about-feature-icon"
+                                    style="color: var(--accent-gold); background: rgba(229, 184, 105, 0.1); border: 1px solid var(--border-light);">
+                                    💧</div>
+                                <div>
+                                    <h4 class="about-feature-title" style="color: var(--text-primary);">Eco-Friendly
+                                        Hydropower</h4>
+                                    <p class="about-feature-desc" style="color: var(--text-secondary);">Zero
+                                        electricity, utilizing natural glacial stream currents.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Dynamic Logic -->
+    <script>
+        const sourcingData = {
+            ghatt: {
+                title: "Traditional Ghatt Mills",
+                titleColor: "var(--accent-gold)",
+                desc: "Our local millets and grains are ground using traditional stone watermills (Ghatts) powered entirely by glacial streams. This slow, cold-grinding process retains all natural nutrients and delivers a superior texture to the flour.",
+                icon: "💧",
+                featTitle: "Eco-Friendly Hydropower",
+                featDesc: "Zero electricity, utilizing natural glacial stream currents."
+            },
+            honey: {
+                title: "Wild Coniferous Apiculture",
+                titleColor: "var(--accent-copper)",
+                desc: "Sourced directly from native Himalayan honeybees (Apis cerana indica) nesting in the high pine and oak forests of Chamoli. Harvested safely by local gatherers without harming the hives, yielding raw, medicinal honey.",
+                icon: "🌲",
+                featTitle: "Biosphere Sourced",
+                featDesc: "Collected from clean, unpolluted valleys near Nanda Devi."
+            },
+            tea: {
+                title: "High Altitude Organic Tea",
+                titleColor: "var(--accent-gold)",
+                desc: "Grown in nitrogen-rich soil under mountain clouds, our green and black tea leaves are handpicked and rolled by small-holder farmers. The high elevation slows growth, creating intense flavor profiles.",
+                icon: "🌱",
+                featTitle: "Cooperative Sourced",
+                featDesc: "Fair-trade pricing returned directly to women-led farming groups."
+            },
+            delivery: {
+                title: "High Altitude Delivery Logistics",
+                titleColor: "var(--accent-copper)",
+                desc: "Transporting goods across mountain roads requires specialized coordination. We offer reliable, eco-friendly local logistics to distribute mountain crop bags directly to our cafe, store, and nearby households.",
+                icon: "🏔️",
+                featTitle: "Tough Terrain Logistics",
+                featDesc: "Special packaging to keep teas, honey, and grains fresh during transit."
+            }
+        };
+
+        function switchSourcingTab(tabId, buttonElement) {
+            // Remove active class from all buttons in the sourcing tabs list
+            const buttons = buttonElement.parentElement.querySelectorAll('.sourcing-tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            buttonElement.classList.add('active');
+
+            // Update the detail card content
+            const data = sourcingData[tabId];
+            const contentArea = document.getElementById('sourcing-content-area');
+            if (!contentArea) return;
+
+            // Apply a quick fade transition
+            contentArea.style.opacity = '0';
+            contentArea.style.transform = 'translateY(10px)';
+            contentArea.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+
+            setTimeout(() => {
+                contentArea.innerHTML = `
+                    <h3 class="card-title" style="font-size: 1.8rem; margin-bottom: 12px; color: ${data.titleColor};">${data.title}</h3>
+                    <p style="margin-bottom: 24px; line-height: 1.7; color: var(--text-secondary);">${data.desc}</p>
+                    
+                    <div class="about-features" style="margin-top: 20px; grid-template-columns: 1fr;">
+                        <div class="about-feature">
+                            <div class="about-feature-icon" style="color: ${data.titleColor}; background: rgba(229, 184, 105, 0.1); border: 1px solid var(--border-light);">${data.icon}</div>
+                            <div>
+                                <h4 class="about-feature-title" style="color: var(--text-primary);">${data.featTitle}</h4>
+                                <p class="about-feature-desc" style="color: var(--text-secondary);">${data.featDesc}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                contentArea.style.opacity = '1';
+                contentArea.style.transform = 'translateY(0)';
+            }, 200);
+        }
+    </script>
+
+    <!-- Shared Modals & Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-brand-title">Masala<span>Club</span></h3>
+                    <p class="footer-brand-desc">Serving premium mountain blends and pure local Himalayan organic
+                        produce directly to your hands in Chamoli.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/masalaclubcompany/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61590862975801" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Opening Hours</h4>
+                    <ul class="footer-links" style="color: var(--text-secondary);">
+                        <li>Weekday: 7:30 AM - 9:00 PM</li>
+                        <li>Saturday: 7:00 AM - 10:00 PM</li>
+                        <li>Sunday: 7:00 AM - 9:00 PM</li>
+                        <li style="margin-top: 10px; color: var(--accent-gold); font-size: 0.8rem; font-weight: 600;">*
+                            Closed during extreme snowfall</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Find Us</h4>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=30.409667,79.3255"
+                                target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">30°24'34.8"N 79°19'31.8"E, Vivekananda Colony,
+                                Haldapani, Gopeshwar, Uttarakhand 246401</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </span>
+                            <a href="tel:+917895447152"
+                                style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">+91 78954 47152</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </span>
+                            <a href="mailto:masalaclubcompany@gmail.com"
+                                style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                                onmouseover="this.style.color='var(--accent-gold)'"
+                                onmouseout="this.style.color='inherit'">masalaclubcompany@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Masala Club Chamoli. All rights reserved. Created with mountain love.</span>
+                <span>FSSAI Lic No. 12345678901234</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Success Modal Overlay -->
+    <div class="modal-overlay" id="success-message-modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-close" onclick="closeSuccessModal()">✕</div>
+            <div class="success-modal-body">
+                <div class="success-icon-wrapper">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                    </svg>
+                </div>
+                <h3 class="success-title" id="success-modal-title">Action Confirmed</h3>
+                <p class="success-desc" id="success-modal-message">Your action was completed successfully.</p>
+                <button class="btn btn-primary" onclick="closeSuccessModal()"
+                    style="margin: 0 auto; display: block;">Awesome</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-notifications-container"></div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

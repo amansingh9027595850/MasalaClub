@@ -1,0 +1,63 @@
+Created At: 2026-06-12T10:12:38Z
+Completed At: 2026-06-12T10:12:38Z
+File Path: `file:///c:/Users/singh/Masala%20Club/gallery.html`
+Total Lines: 265
+Total Bytes: 15979
+Showing lines 70 to 172
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+70:     <!-- Gallery Content Section -->
+71:     <section class="section" id="gallery" style="padding-top: 140px;">
+72:         <div class="container">
+73:             <div class="section-header">
+74:                 <span class="section-subtitle">Cozy Views & Vibes</span>
+75:                 <h1 class="section-title title-gradient">Chamoli Ridge Gallery</h1>
+76:                 <p class="section-desc">Take a visual journey through Masala Club. Admire Nanda Devi peak visibility, the cozy fireplace decks, and local organic cooperative harvests.</p>
+77:             </div>
+78: 
+79:             <!-- Gallery Grid Layout -->
+80:             <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px;">
+81:                 <!-- Image 1 -->
+82:                 <div class="card glass-panel" style="overflow: hidden;">
+83:                     <div class="card-image-wrapper" style="height: 280px;">
+84:                         <img src="assets/cafe_hero.png" alt="Cozy Cafe Mountain View" class="card-img" style="height: 100%;">
+85:                     </div>
+86:                     <div style="padding: 20px;">
+87:                         <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-gold);">Cozy Indoor Fireside</h3>
+88:                         <p class="card-desc" style="font-size: 0.85rem; margin-top: 4px;">Steaming cups of herbal tea served with glass window views of snow peaks.</p>
+89:                     </div>
+90:                 </div>
+91: 
+92:                 <!-- Image 2 -->
+93:                 <div class="card glass-panel" style="ove
+<truncated 3706 bytes>
+t-size: 0.85rem; margin-top: 4px;">Cozy mountain cafe and local organic grocery store set in a scenic peak ridge.</p>
+144:                     </div>
+145:                 </div>
+146: 
+147:                 <!-- Image 7 -->
+148:                 <div class="card glass-panel" style="overflow: hidden;">
+149:                     <div class="card-image-wrapper" style="height: 280px;">
+150:                         <img src="assets/himalayan_tea_prep.png" alt="Traditional Spiced Tea Preparation" class="card-img" style="height: 100%;">
+151:                     </div>
+152:                     <div style="padding: 20px;">
+153:                         <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-gold);">Traditional Tea Brewing</h3>
+154:                         <p class="card-desc" style="font-size: 0.85rem; margin-top: 4px;">Copper kettle steaming on a stone stove, pouring fresh Himalayan spiced tea.</p>
+155:                     </div>
+156:                 </div>
+157: 
+158:                 <!-- Image 8 -->
+159:                 <div class="card glass-panel" style="overflow: hidden;">
+160:                     <div class="card-image-wrapper" style="height: 280px;">
+161:                         <img src="assets/cardamom_fields.png" alt="Organic Cardamom Pods Growing" class="card-img" style="height: 100%;">
+162:                     </div>
+163:                     <div style="padding: 20px;">
+164:                         <h3 class="card-title" style="font-size: 1.15rem; color: var(--accent-copper);">Cardamom Plantations</h3>
+165:                         <p class="card-desc" style="font-size: 0.85rem; margin-top: 4px;">Green aromatic cardamoms growing in the misty, terraced valley farms.</p>
+166:                     </div>
+167:                 </div>
+168: 
+169: 
+170:             </div>
+171:         </div>
+172:     </section>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
