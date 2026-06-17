@@ -457,6 +457,14 @@ header.scrolled {
     transform: translateY(-2px);
 }
 
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 
 
 /* Sections Styling */
